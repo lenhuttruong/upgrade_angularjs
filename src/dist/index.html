@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app" ng-controller="IndexCtr">
+<html ng-controller="IndexCtr">
 <head>
 	<title>AngularJS</title>
 
@@ -19,11 +19,11 @@
 	<!--<script type="text/javascript" src="sayGoodbyeWorld/sayGoodbyeWorld.route.js"></script>-->
 	<!--<script type="text/javascript" src="sayGoodbyeWorld/sayGoodbyeWorld.controller.js"></script>-->
 
-</head>
+<script type="text/javascript" src="/main.bundle.js"></script></head>
 
 <body>
 	<div class="header">{{ $root.message }}</div>
-	<app-directive></app-directive>
+	<ng-view></ng-view>
 </body>
 
 </html>
